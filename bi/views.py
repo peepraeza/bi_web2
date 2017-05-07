@@ -40,6 +40,7 @@ def graph(request):
                    'all_sub':Subgraph.objects.all()})
 
 def get_subgraph(request):
+    Subgraph.objects.all().delete()
     data = request.GET.get('data')
     for i in FileSelect.objects.all().values_list('file_name', flat=True):
         m.select_file(i)
