@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+  <title>BI</title>
+  <link rel="shortcut icon" href="{% static 'pic/icon.png' %}">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+  .import_div{
+    margin: 60px 0 0 500px
+  }
+  .import{
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 6px;
+    cursor: url({% static 'pic/cat2.png' %}),auto;
+    background-color:green  ;
+    color:white;
+  }
+</style>
+</head>
+
+<body style="background-image:url({% static 'pic/bg3.jpg' %});">
+  <div class="w3-container" style="background-color: black">
+    <h1  style="text-align: center; color: white; font-family:Times;">Business Intelligence</h1>        
+  </div>
+
+  <div class="w3-quarter" style="background-color:rgba(255, 255, 255, 0.5); height:600px;padding-top: 10px; width: 300px" >
+    <h2 style="text-align: center;">Open File</h2>
+    <div class="w3-bar-block">
+      {% for list in all_list %}
+      <a href="{% url 'bi:pivot_table' list.file_name %}" class="w3-bar-item w3-hover-light-grey w3-ripple" style="width: 100%; text-align: left; text-decoration:none">&#8231; {{ list.file_name }}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="import_div" style="background-color:rgba(255, 255, 255, 0.5); width: 600px;
+                                height:400px; text-align: center;">
+    <h1 style="padding-top: 50px">Import File</h1>
+    <br/><br/>
+    <form action="{% url 'bi:import_file' %}" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <input type="file" name="file" accept=".xlsx">&nbsp;
+      <br/><br/><br/>
+      <button class="import" type="submit"><b>UPLOAD</b></button></a>
+      <br/><br/><br/>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+time:Order Date,Ship Date,
+dimension:Order ID,Order Priority,Ship Mode,Customer Name,Customer State,Zip Code,Region,Customer Segment,Product Category,Product Sub-Category,Product Name,Product Container,
+measure:Order Quantity,Sales,Discount,Profit,Unit Price,Shipping Cost,Product Base Margin,

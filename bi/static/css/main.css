@@ -1,0 +1,127 @@
+table.tableSection {
+    display: table;
+    width: 100%;
+}
+table.tableSection thead, table.tableSection tbody {
+    float: left;
+    width: 100%;
+}
+table.tableSection tbody {
+    overflow: auto;
+    height: 150px;
+}
+table.tableSection tr {
+    width: 100%;
+    display: table;
+    text-align: left;
+}
+table.tableSection th, table.tableSection td {
+    width: 60%;
+}
+
+.button {
+min-width: 40px;
+height: 25px;
+text-align: center;
+font-size: 16px;
+margin-left: 4px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+button.import{
+width: 120px;
+height: 60px;
+text-align: center;
+font-size: 24px;
+margin: 4px 4px 4px 4px;
+border-radius: 6px;
+cursor: pointer;
+background-color:red;
+color:white;
+}
+
+
+div.edit_table {
+width: 1100px;
+position: relative;
+left: 50%;
+margin: 0 0 0 -550px;
+}
+
+div.show_table {
+width: 850px;
+position: relative;
+left: 50%;
+margin: 0 0 0 -425px;
+}
+
+div.import_div {
+width: 600px;
+position: relative;
+text-align: left;
+left: 50%;
+margin: 0 0 0 -300px;
+background-color:rgba(255, 255, 255, 0.9);
+}
+
+div.error_div {
+width: 600px;
+position: relative;
+text-align: center;
+padding: 10px 0px;
+left: 50%;
+margin: 0 0 0 -300px;
+color: white;
+background-color:rgba(255, 0, 0, 0.8);
+}
+
+div.notsupport_div {
+    position:relative;
+    background-color:white;
+    color:black;
+    width:550px;
+    left: 50%;
+    margin: 0 0 0 -275px;
+}
+
+div.input_form {
+width: 800px;
+position: relative;
+text-align: center;
+left: 50%;
+margin: 0 0 0 -400px;
+background-color:rgba(255, 255, 255, 0.9);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width:100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: grey;
+}
+
+.active {
+    background-color: black;
+}
+

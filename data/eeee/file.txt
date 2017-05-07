@@ -1,0 +1,3 @@
+time:Order Date,Ship Date,
+dimension:Row ID,Order ID,Ship Mode,Customer ID,Customer Name,Segment,City,State,Country,Market,Region,Product ID,Category,Sub-Category,Product Name,Order Priority,
+measure:Postal Code,Sales,Quantity,Discount,Profit,Shipping Cost,
